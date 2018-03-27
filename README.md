@@ -20,7 +20,7 @@ Python based script for Information Gathering.
    __'.___.'__
  ´   `  |° ´ Y `
 
-Usage: python serenity.py --all hack.me
+Usage: ./serenity --all hack.me
 
 Options:
   Basic Help:
@@ -48,6 +48,6 @@ Options:
   git clone https://github.com/abaykan/53R3N17Y.git
   cd 53R3N17Y/
   pip install -r requirements.txt
-  python sereniti.py -h</pre>
+  ./serenity -h</pre>
   
 note: tested with python 2.7.6
