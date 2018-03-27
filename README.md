@@ -16,11 +16,13 @@ Python based script for Information Gathering.
 - Backbox 5
 
 ## Install
+### MacOSX
 (as root)
   <pre>
-  git clone https://github.com/abaykan/53R3N17Y.git
-  cd 53R3N17Y/
+  git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
+  >echo 'alias serenity="/Users/macbray-pc/tools/serenity && ./serenity"' > ~/.zshrc
+  cd /usr/local/share/serenity
   pip install -r requirements.txt
-  ./serenity -h</pre>
+  serenity -h</pre>
   
-note: tested with python 2.7.6
+note: tested with Python 2.7.14
