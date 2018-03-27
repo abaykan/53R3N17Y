@@ -20,7 +20,7 @@ Python based script for Information Gathering.
 (as root)
   <pre>
   git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
-  >echo 'alias serenity="/Users/macbray-pc/tools/serenity && ./serenity"' > ~/.zshrc
+  >echo 'alias serenity="/usr/local/share/serenity && ./serenity"' > ~/.zshrc
   cd /usr/local/share/serenity
   pip install -r requirements.txt
   serenity -h</pre>
@@ -29,7 +29,7 @@ Python based script for Information Gathering.
 (as root)
   <pre>
   git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
-  >echo 'alias serenity="/Users/macbray-pc/tools/serenity && ./serenity"' > ~/.bashrc
+  >echo 'alias serenity="/usr/local/share/serenity && ./serenity"' > ~/.bashrc
   cd /usr/local/share/serenity
   pip install -r requirements.txt
   serenity -h</pre>
