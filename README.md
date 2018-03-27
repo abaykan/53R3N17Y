@@ -24,5 +24,14 @@ Python based script for Information Gathering.
   cd /usr/local/share/serenity
   pip install -r requirements.txt
   serenity -h</pre>
+
+### Linux
+(as root)
+  <pre>
+  git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
+  >echo 'alias serenity="/Users/macbray-pc/tools/serenity && ./serenity"' > ~/.bashrc
+  cd /usr/local/share/serenity
+  pip install -r requirements.txt
+  serenity -h</pre>
   
 note: tested with Python 2.7.14
