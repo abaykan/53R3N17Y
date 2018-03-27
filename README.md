@@ -11,7 +11,7 @@ Python based script for Information Gathering.
 <a href="https://asciinema.org/a/172850"><img src="https://asciinema.org/a/172850.png" width="836"/></a>
 
 ## Operating Systems Tested
-- MacOSX
+- OSX El Capitan 10.11
 - Ubuntu 16.04
 - Backbox 5
 
