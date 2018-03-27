@@ -1,5 +1,11 @@
 # 53R3N17Y | <img src="https://img.shields.io/badge/i-53R3N17Y-red.svg">
 Python based script for Information Gathering.
+
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![GitHub stars](https://img.shields.io/github/stars/abaykan/53R3N17Y.svg)](https://github.com/abaykan/53R3N17Y/stargazers)
+[![HitCount](http://hits.dwyl.io/abaykan/53R3N17Y.svg)](http://hits.dwyl.io/abaykan/53R3N17Y)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/Django.svg?style=plastic)](https://github.com/abaykan/53R3N17Y/)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 <pre>
 
      _-----_
@@ -30,6 +36,9 @@ Options:
   Grouped Results:
     -a, --all    All Things at Once!</pre>
     
+## Operating Systems Tested
+- MacOSX
+
 ## Install
 (as root)
   <pre>
