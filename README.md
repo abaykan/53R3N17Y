@@ -39,12 +39,14 @@ Options:
     -a, --all    All Things at Once!</pre>
 ## Operating Systems Tested
 - MacOSX
+- Ubuntu 16.04
+- Backbox 5
 
 ## Install
 (as root)
   <pre>
   git clone https://github.com/abaykan/53R3N17Y.git
-  cd crawlbox/
+  cd 53R3N17Y/
   pip install -r requirements.txt
   python sereniti.py -h</pre>
   
