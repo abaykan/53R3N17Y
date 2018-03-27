@@ -30,7 +30,7 @@ Options:
   Grouped Results:
     -a, --all    All Things at Once!</pre>
     
-    # Install
+## Install
 (as root)
   <pre>
   git clone https://github.com/abaykan/53R3N17Y.git
