@@ -8,35 +8,8 @@ Python based script for Information Gathering.
 [![Maintainability](https://api.codeclimate.com/v1/badges/819193013f43f28ad73e/maintainability)](https://codeclimate.com/github/abaykan/53R3N17Y/maintainability)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-<pre>
+<a href="https://asciinema.org/a/172850"><img src="https://asciinema.org/a/172850.png" width="836"/></a>
 
-     _-----_
-    |       |    .------------------------.
-    |--(o)--|    |   Welcome to 53R3N17Y  |
-   `---------´   |       abaykan.com      |
-    ( _´U`_ )    '------------------------'
-    /___A___
-     |  ~  |
-   __'.___.'__
- ´   `  |° ´ Y `
-
-Usage: ./serenity --all hack.me
-
-Options:
-  Basic Help:
-    -h, --help   Shows the help for program.
-
-  IP Tools:
-    -1, --revht  Reverse IP
-    -2, --geo    Geo IP Lookup
-    -3, --whois  Whois Lookup
-    -4, --host   Searching Host
-    -5, --dns    Show HTTP Header
-    -6, --sdns   Find Shared DNS
-    -7, --http   Show HTTP Header
-
-  Grouped Results:
-    -a, --all    All Things at Once!</pre>
 ## Operating Systems Tested
 - MacOSX
 - Ubuntu 16.04
