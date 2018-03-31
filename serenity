@@ -20,11 +20,14 @@ import optparse
 import os, re
 from lxml import html
 import sys
+import datetime
 
 ################################  Banner   ################################
 
 os.system('clear')
 print(Banner)
+print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+print '\r\n'
 
 ################################ Functions ################################
 
@@ -138,7 +141,7 @@ reverse_ip.add_option( "-1", "--revht",  action='store_true', dest='hackertarget
 reverse_ip.add_option( "-2", "--geo",  action='store_true', dest='geoip', help="Geo IP Lookup")
 reverse_ip.add_option( "-3", "--whois",  action='store_true', dest='whois', help="Whois Lookup")
 reverse_ip.add_option( "-4", "--host",  action='store_true', dest='hostsearch', help="Searching Host")
-reverse_ip.add_option( "-5", "--dns",  action='store_true', dest='dnslookup', help="Show HTTP Header")
+reverse_ip.add_option( "-5", "--dns",  action='store_true', dest='dnslookup', help="DNS Lookup")
 reverse_ip.add_option( "-6", "--sdns",  action='store_true', dest='findshareddns', help="Find Shared DNS")
 reverse_ip.add_option( "-7", "--http",  action='store_true', dest='httpheaders', help="Show HTTP Header")
 
