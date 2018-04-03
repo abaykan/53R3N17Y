@@ -1,4 +1,4 @@
-# 53R3N17Y | <img src="https://img.shields.io/badge/i-53R3N17Y-red.svg">
+# 53R3N17Y
 Python based script for Information Gathering.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
