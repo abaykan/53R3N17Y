@@ -14,6 +14,7 @@ Python based script for Information Gathering.
 - OSX El Capitan 10.11
 - Ubuntu 16.04
 - Backbox 5
+- Kali Linux 2018.1
 
 ## Install
 ### MacOSX
@@ -35,3 +36,12 @@ Python based script for Information Gathering.
   serenity -h</pre>
   
 note: tested with Python 2.7.14
+
+# Media Review
+kitploit.com: <a href="https://www.kitploit.com/2018/03/53r3n17y-python-based-script-for.html">https://www.kitploit.com/2018/03/53r3n17y-python-based-script-for.html</a><br>
+securityonline.info: <a href="https://securityonline.info/53r3n17y-python-based-script-for-information-gathering/">https://securityonline.info/53r3n17y-python-based-script-for-information-gathering/</a><br>
+apsi.org: <a href="http://sapsi.org/53r3n17y-python-based-script-for-information-gathering/">http://sapsi.org/53r3n17y-python-based-script-for-information-gatherin</a><br>
+cybeseclabs.com: <a href="https://www.cybeseclabs.com/2018/03/31/53r3n17y-python-based-script-for-information-gathering/">https://www.cybeseclabs.com/2018/03/31/53r3n17y-python-based-script-for-information-gathering/</a><br>
+digitalmunition.me: <a href="https://www.digitalmunition.me/2018/04/53r3n17y-python-based-script-information-gathering/">https://www.digitalmunition.me/2018/04/53r3n17y-python-based-script-information-gathering/</a><br>
+hackingdeephunter.ga: <a href="http://www.hackingdeephunter.ga/2018/03/53r3n17y-python-based-script-for.html">http://www.hackingdeephunter.ga/2018/03/53r3n17y-python-based-script-for.html</a><br>
+Kali Linux Tricks: <a href="https://www.youtube.com/watch?v=x57w2b7z0-M">https://www.youtube.com/watch?v=x57w2b7z0-M</a>
