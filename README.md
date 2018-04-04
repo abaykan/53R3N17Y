@@ -1,5 +1,8 @@
 # 53R3N17Y
+
 Python based script for Information Gathering.
+
+To get the details [hackertarget.com](hackertarget.com) is used. There is a limit of 100 API calls per day from a single IP address. 
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub stars](https://img.shields.io/github/stars/abaykan/53R3N17Y.svg)](https://github.com/abaykan/53R3N17Y/stargazers)
@@ -18,24 +21,30 @@ Python based script for Information Gathering.
 
 ## Install
 ### MacOSX
-(as root)
-  <pre>
-  git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
-  >echo 'alias serenity="/usr/local/share/serenity && ./serenity"' > ~/.zshrc
-  cd /usr/local/share/serenity
-  pip install -r requirements.txt
-  serenity -h</pre>
+
+Perform the following steps as `root`.
+
+```bash
+git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
+> echo 'alias serenity="/usr/local/share/serenity && ./serenity"' > ~/.zshrc
+cd /usr/local/share/serenity
+pip install -r requirements.txt
+serenity -h
+```
 
 ### Linux
-(as root)
-  <pre>
-  git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
-  >echo 'alias serenity="/usr/local/share/serenity && ./serenity"' > ~/.bashrc
-  cd /usr/local/share/serenity
-  pip install -r requirements.txt
-  serenity -h</pre>
+
+Perform the following steps as `root`.
+
+```bash
+git clone https://github.com/abaykan/53R3N17Y.git /usr/local/share/serenity
+>echo 'alias serenity="/usr/local/share/serenity && ./serenity"' > ~/.bashrc
+cd /usr/local/share/serenity
+pip install -r requirements.txt
+serenity -h
+```
   
-note: tested with Python 2.7.14
+Note: Tested with Python 2.7.14
 
 # Media Review
 - kitploit.com: <a href="https://www.kitploit.com/2018/03/53r3n17y-python-based-script-for.html">https://www.kitploit.com/2018/03/53r3n17y-python-based-script-for.html</a><br>
