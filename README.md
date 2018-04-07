@@ -17,7 +17,7 @@ Python based script for Information Gathering.
 - Kali Linux 2018.1
 
 ## Output
-See the output, <a href="https://gist.github.com/abaykan/921fe6b643a2bbcbd32d6e14f1678e6d">here</a>.
+See the output, <a href="https://gist.githubusercontent.com/abaykan/921fe6b643a2bbcbd32d6e14f1678e6d/raw/1b4aba81d775694c941e60a2503b4c1ce2d2fb20/53R3N17Y.txt">here</a>.
 
 ## Install
 ### MacOSX
