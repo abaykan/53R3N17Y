@@ -16,6 +16,9 @@ Python based script for Information Gathering.
 - Backbox 5
 - Kali Linux 2018.1
 
+## Output
+See the output, <a href="https://gist.github.com/abaykan/921fe6b643a2bbcbd32d6e14f1678e6d">here</a>.
+
 ## Install
 ### MacOSX
 (as root)
