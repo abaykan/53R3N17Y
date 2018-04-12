@@ -44,6 +44,38 @@ def reverseViaHT(website):
     else:
         write(var="@", color=r, data="Sorry, The webserver of the website you entered have no domains other then the one you gave :')")
 
+def reverseViaYGS(website):
+    website = addHTTP(website); webs = removeHTTP(website)
+    url = "https://domains.yougetsignal.com/domains.php"
+    post = {
+        'remoteAddress' : webs,
+        'key' : ''
+    }
+    request = requests.post(url, headers=functions._headers, timeout=5, data=post).text.encode('UTF-8')
+
+    grab = json.loads(request)
+
+    Status = grab['status']
+    IP = grab['remoteIpAddress']
+    Domain = grab['remoteAddress']
+    Total_Domains = grab['domainCount']
+    Array = grab['domainArray']
+
+    if (Status == 'Fail'):
+        write(var="#", color=r, data="Sorry! Reverse Ip Limit Reached.")
+    else:
+        write(var="$", color=c, data="IP: " + IP + "")
+        write(var="$", color=c, data="Domain: " + Domain + "")
+        write(var="$", color=c, data="Total Domains: " + Total_Domains + "\n")
+
+        domains = []
+
+        for x, y in Array:
+            domains.append(x)
+
+        for res in domains:
+            write(var="#", color=w, data=res)
+
 def geoip(website):
     website = addHTTP(website); webs = removeHTTP(website)
     url = "http://api.hackertarget.com/geoip/?q="
@@ -137,13 +169,14 @@ general     = optparse.OptionGroup(parser, c + 'Basic Help' + w)
 general.add_option( '-h', '--help', action='help', dest='help', help='Shows the help for program.')
 
 reverse_ip  = optparse.OptionGroup(parser, c + "IP Tools" + w)
-reverse_ip.add_option( "-1", "--revht",  action='store_true', dest='hackertarget', help="Reverse IP")
-reverse_ip.add_option( "-2", "--geo",  action='store_true', dest='geoip', help="Geo IP Lookup")
-reverse_ip.add_option( "-3", "--whois",  action='store_true', dest='whois', help="Whois Lookup")
-reverse_ip.add_option( "-4", "--host",  action='store_true', dest='hostsearch', help="Searching Host")
-reverse_ip.add_option( "-5", "--dns",  action='store_true', dest='dnslookup', help="DNS Lookup")
-reverse_ip.add_option( "-6", "--sdns",  action='store_true', dest='findshareddns', help="Find Shared DNS")
-reverse_ip.add_option( "-7", "--http",  action='store_true', dest='httpheaders', help="Show HTTP Header")
+reverse_ip.add_option( "-1", "--revht",  action='store_true', dest='hackertarget', help="Reverse IP via HackTarget")
+reverse_ip.add_option( "-2", "--revygs",  action='store_true', dest='yougetsignal', help="Reverse IP via YouGetSignal")
+reverse_ip.add_option( "-3", "--geo",  action='store_true', dest='geoip', help="Geo IP Lookup")
+reverse_ip.add_option( "-4", "--whois",  action='store_true', dest='whois', help="Whois Lookup")
+reverse_ip.add_option( "-5", "--host",  action='store_true', dest='hostsearch', help="Searching Host")
+reverse_ip.add_option( "-6", "--dns",  action='store_true', dest='dnslookup', help="DNS Lookup")
+reverse_ip.add_option( "-7", "--sdns",  action='store_true', dest='findshareddns', help="Find Shared DNS")
+reverse_ip.add_option( "-8", "--http",  action='store_true', dest='httpheaders', help="Show HTTP Header")
 
 grouped_scanning = optparse.OptionGroup(parser, c + "Grouped Results" + w)
 grouped_scanning.add_option( "-a", "--all",  action='store_true', dest='all', help="All Things at Once!")
@@ -163,8 +196,12 @@ try:
         heading(heading="Geo IP Lookup",  color=c, website=website, afterWebHead="")
         geoip(website)
 
+    elif options.yougetsignal:
+        heading(heading="Reversing IP via YouGetSignal", color=c, website=website, afterWebHead="")
+        reverseViaYGS(website)
+
     elif options.hackertarget:
-        heading(heading="Reversing IP", color=c, website=website, afterWebHead="")
+        heading(heading="Reversing IP via HackTarget", color=c, website=website, afterWebHead="")
         reverseViaHT(website)
 
     elif options.whois:
@@ -191,7 +228,10 @@ try:
         heading(heading="Geo IP Lookup", color=c, website=website, afterWebHead="")
         geoip(website)
 
-        heading(heading="Reversing IP", color=c, website=website, afterWebHead="")
+        heading(heading="Reversing IP via YouGetSignal", color=c, website=website, afterWebHead="")
+        reverseViaYGS(website)
+
+        heading(heading="Reversing IP via HackTarget", color=c, website=website, afterWebHead="")
         reverseViaHT(website)
 
         heading(heading="Whois Lookup", color=c, website=website, afterWebHead="")
