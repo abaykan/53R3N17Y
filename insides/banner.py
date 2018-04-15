@@ -1,30 +1,30 @@
 # -*- coding: utf-8 -*- 
 """
      _-----_
-    |       |    .------------------------.
-    |--(o)--|    |   Welcome to 53R3N17Y  |
-   `---------´   |       abaykan.com      |
-    ( _´U`_ )    '------------------------'
-    /___A___\
-
+    |       |    
+    |--(o)--|     ╒ 53R3N17Y ════════════════════════════════════╕
+   `---------´    │Python based script for Information Gathering.│
+    ( _´U`_ )     ╘══════════════════════════════════════════════╛ 
+    /___A___\     
      |  ~  |
    __'.___.'__
  ´   `  |° ´ Y `
+  abaykandotcom
 """
 
 from colors import c, w
 import colorama
 from colorama import Fore, Back, Style
 
-banner = Fore.CYAN + """
+banner = c + """
      _-----_
-    |       |    .------------------------.
-    |--(o)--|    |   Welcome to 53R3N17Y  |
-   `---------´   |       abaykan.com      |
-    ( _´U`_ )    '------------------------'
-    /___A___\
-
+    |       |    
+    |--(o)--|     ╒ 53R3N17Y ════════════════════════════════════╕
+   `---------´    │Python based script for Information Gathering.│
+    ( _´U`_ )     ╘══════════════════════════════════════════════╛ 
+    /___A___\     
      |  ~  |
    __'.___.'__
  ´   `  |° ´ Y `
+  abaykandotcom
 """ + w
