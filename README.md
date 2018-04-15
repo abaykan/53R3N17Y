@@ -12,7 +12,7 @@ To get the details [hackertarget.com](hackertarget.com) is used. There is a limi
 [![Maintainability](https://api.codeclimate.com/v1/badges/819193013f43f28ad73e/maintainability)](https://codeclimate.com/github/abaykan/53R3N17Y/maintainability)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 
-<a href="https://asciinema.org/a/172850"><img src="https://asciinema.org/a/172850.png" width="836"/></a>
+<a href="https://asciinema.org/a/176391"><img src="https://asciinema.org/a/176391.png" width="836"/></a>
 
 ## Operating Systems Tested
 - OSX El Capitan 10.11
