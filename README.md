@@ -56,5 +56,6 @@ Note: Tested with Python 2.7.14
 - apsi.org: <a href="http://sapsi.org/53r3n17y-python-based-script-for-information-gathering/">http://sapsi.org/53r3n17y-python-based-script-for-information-gatherin</a><br>
 - cybeseclabs.com: <a href="https://www.cybeseclabs.com/2018/03/31/53r3n17y-python-based-script-for-information-gathering/">https://www.cybeseclabs.com/2018/03/31/53r3n17y-python-based-script-for-information-gathering/</a><br>
 - digitalmunition.me: <a href="https://www.digitalmunition.me/2018/04/53r3n17y-python-based-script-information-gathering/">https://www.digitalmunition.me/2018/04/53r3n17y-python-based-script-information-gathering/</a><br>
+- hacking.reviews: <a href="https://www.hacking.reviews/2018/03/53r3n17y-python-based-script-for.html">https://www.hacking.reviews/2018/03/53r3n17y-python-based-script-for.html</a>
 - hackingdeephunter.ga: <a href="http://www.hackingdeephunter.ga/2018/03/53r3n17y-python-based-script-for.html">http://www.hackingdeephunter.ga/2018/03/53r3n17y-python-based-script-for.html</a><br>
 - Kali Linux Tricks: <a href="https://www.youtube.com/watch?v=x57w2b7z0-M">https://www.youtube.com/watch?v=x57w2b7z0-M</a>
