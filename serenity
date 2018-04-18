@@ -2,15 +2,15 @@
 # -*- coding: utf-8 -*- 
 """
      _-----_
-    |       |    .------------------------.
-    |--(o)--|    |   Welcome to 53R3N17Y  |
-   `---------´   |       abaykan.com      |
-    ( _´U`_ )    '------------------------'
-    /___A___\
-
+    |       |    
+    |--(o)--|     ╒ 53R3N17Y ════════════════════════════════════╕
+   `---------´    │Python based script for Information Gathering.│
+    ( _´U`_ )     ╘══════════════════════════════════════════════╛ 
+    /___A___\     
      |  ~  |
    __'.___.'__
  ´   `  |° ´ Y `
+  abaykandotcom
 """
 
 from insides import *
@@ -20,14 +20,12 @@ import optparse
 import os, re
 from lxml import html
 import sys
-import datetime
 
 ################################  Banner   ################################
 
 os.system('clear')
 print(Banner)
-print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-print '\r\n'
+print '\r'
 
 ################################ Functions ################################
 
@@ -79,6 +77,19 @@ def reverseViaYGS(website):
 def geoip(website):
     website = addHTTP(website); webs = removeHTTP(website)
     url = "http://api.hackertarget.com/geoip/?q="
+    combo = "{url}{website}".format(url=url, website=webs)
+    request = requests.get(combo, headers=functions._headers, timeout=5).text.encode('UTF-8')
+    if len(request) != 5:
+        list = request.strip("").split("\n")
+        for _links in list:
+            if len(_links) != 0:
+                write(var="#", color=w, data=_links)
+    else:
+        write(var="@", color=r, data="Sorry, The webserver of the website you entered have no domains other then the one you gave :')")
+
+def pagelinks(website):
+    website = addHTTP(website); webs = removeHTTP(website)
+    url = "http://api.hackertarget.com/pagelinks/?q="
     combo = "{url}{website}".format(url=url, website=webs)
     request = requests.get(combo, headers=functions._headers, timeout=5).text.encode('UTF-8')
     if len(request) != 5:
@@ -177,6 +188,7 @@ reverse_ip.add_option( "-5", "--host",  action='store_true', dest='hostsearch', 
 reverse_ip.add_option( "-6", "--dns",  action='store_true', dest='dnslookup', help="DNS Lookup")
 reverse_ip.add_option( "-7", "--sdns",  action='store_true', dest='findshareddns', help="Find Shared DNS")
 reverse_ip.add_option( "-8", "--http",  action='store_true', dest='httpheaders', help="Show HTTP Header")
+reverse_ip.add_option( "-9", "--links",  action='store_true', dest='pagelinks', help="Page Links Scraper")
 
 grouped_scanning = optparse.OptionGroup(parser, c + "Grouped Results" + w)
 grouped_scanning.add_option( "-a", "--all",  action='store_true', dest='all', help="All Things at Once!")
@@ -203,6 +215,10 @@ try:
     elif options.hackertarget:
         heading(heading="Reversing IP via HackTarget", color=c, website=website, afterWebHead="")
         reverseViaHT(website)
+
+    elif options.pagelinks:
+        heading(heading="Extract Links", color=c, website=website, afterWebHead="")
+        pagelinks(website)
 
     elif options.whois:
         heading(heading="Whois Lookup", color=c, website=website, afterWebHead="")
@@ -248,6 +264,9 @@ try:
 
         heading(heading="HTTP Header Host", color=c, website=website, afterWebHead="")
         httpheaders(website)
+
+        heading(heading="Extract Links", color=c, website=website, afterWebHead="")
+        pagelinks(website)
 
     else:
         write(var="~", color=c, data="Usage: " + w + "python " + w + argv[0] + c + " --help")
