@@ -14,6 +14,40 @@ To get the details [hackertarget.com](hackertarget.com) is used. There is a limi
 
 <a href="https://asciinema.org/a/176391"><img src="https://asciinema.org/a/176391.png" width="836"/></a>
 
+## Update
+<pre>
+     _-----_
+    |       |    
+    |--(o)--|     ╒ 53R3N17Y ════════════════════════════════════╕
+   `---------´    │Python based script for Information Gathering.│
+    ( _´U`_ )     ╘══════════════════════════════════════════════╛ 
+    /___A___\     
+     |  ~  |
+   __'.___.'__
+ ´   `  |° ´ Y `
+  abaykandotcom
+
+
+Usage: python ./serenity --all hack.me
+
+Options:
+  Basic Help:
+    -h, --help    Shows the help for program.
+
+  IP Tools:
+    -1, --revht   Reverse IP via HackTarget
+    -2, --revygs  Reverse IP via YouGetSignal | New❗️
+    -3, --geo     Geo IP Lookup
+    -4, --whois   Whois Lookup
+    -5, --host    Searching Host
+    -6, --dns     DNS Lookup
+    -7, --sdns    Find Shared DNS
+    -8, --http    Show HTTP Header
+    -9, --links   Page Links Scraper | New❗️
+
+  Grouped Results:
+    -a, --all     All Things at Once!
+</pre>
 ## Operating Systems Tested
 - OSX El Capitan 10.11
 - Ubuntu 16.04
