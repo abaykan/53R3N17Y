@@ -2,7 +2,7 @@
 
 Python based script for Information Gathering.
 
-To get the details [hackertarget.com](hackertarget.com) is used. There is a limit of 100 API calls per day from a single IP address. 
+To get the details [hackertarget.com](https://hackertarget.com/) is used. There is a limit of 100 API calls per day from a single IP address. 
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 [![GitHub forks](https://img.shields.io/github/forks/abaykan/53R3N17Y.svg)](https://github.com/abaykan/53R3N17Y/network)
