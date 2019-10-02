@@ -14,13 +14,11 @@
   abaykandotcom
 """
 
-from insides import *
-from sys     import argv
-import requests, json
+import json
 import optparse
-import os, re
-from lxml import html
-import sys
+from sys import argv
+
+from insides import *
 
 ################################  Banner   ################################
 
